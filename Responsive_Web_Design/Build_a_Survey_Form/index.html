@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literary Book Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="title">Literary Survey Form</h1>
+        <p id="description">Tell us your favourite books and authors from English literature</p>
+
+        <form action="#" id="survey-form">
+            <div class="section">
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" placeholder="Ente your name here" required>
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" placeholder="Ente your email here" required>
+                <label for="number" id="number-label">Age:</label>
+                <input type="number" id="number" min="5" max="130" placeholder="Ente your age here">
+
+                Gender:
+                <input type="radio" name="gender" id="male" value="m" checked>
+                <label for="male" class="inline" id="male-label">Male</label>
+                <input type="radio" name="gender" id="female" value="f">
+                <label for="female" class="inline" id="female-label">Female</label>
+            </div>
+
+            <div class="section">
+                <label for="dropdown">Which is your favourite literarary genre?</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="" selected disabled>Select a literarary genre</option>
+                    <option value="literary-fiction">Literary Fiction</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="horror">Horror</option>
+                    <option value="historical">Historical</option>
+                    <option value="romance">Romance</option>
+                    <option value="western">Western</option>
+                    <option value="bildungsroman">Bildungsroman</option>
+                    <option value="speculative-fiction">Speculative Fiction</option>
+                    <option value="science-fiction">Science Fiction</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="dystopian">Dystopian</option>
+                    <option value="magical-realism">Magical Realism</option>
+                    <option value="realist-literature">Realist Literature</option>
+                </select>
+            </div>
+
+            <div class="section">
+                <p>Which of the following books have you read?</p>
+                <div>
+                    <label for="paradise-lost"><input type="checkbox" id="paradise-lost" value="paradise-lost">Paradise
+                        Lost</label>
+                    <label for="macbeth"><input type="checkbox" id="macbeth" value="macbeth">Macbeth</label>
+                    <label for="hamlet"><input type="checkbox" id="hamlet" value="hamlet">Hamlet</label>
+                    <label for="arms-and-the-man"><input type="checkbox" id="arms-and-the-man"
+                            value="arms-and-the-man">Arms
+                        and
+                        the
+                        Man</label>
+                    <label for="great-expectations"><input type="checkbox" id="great-expectations"
+                            value="great-expectations">Great
+                        Expectations</label>
+                    <label for="tess-of-the-d-urbervilles"><input type="checkbox" id="tess-of-the-d-urbervilles"
+                            value="tess-of-the-d-urbervilles">Tess
+                        of the d'Urbervilles</label>
+                </div>
+            </div>
+
+            <div class="section">
+                <label for="fav-book-details">Tell us about your most favourite book</label>
+                <textarea name="fav-book-details" id="fav-book-details" rows="10"></textarea>
+            </div>
+            <input type="submit" id="submit">
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
