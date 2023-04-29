@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 720px;
+}
+
+#title {
+    font-family: 'Rowdies ', sans-serif;
+}
+
+#title,
+#subtitle {
+    text-align: center;
+}
+
+#img-div {
+    text-align: center;
+}
+
+#image {
+    margin: 0 auto;
+    display: block;
+    width: 576px;
+    max-width: 100%;
+    height: auto;
+}
+
+#tribute-info {
+    margin: 0 auto;
+    width: 720px;
+    height: auto;
+    max-width: 100%;
+    text-align: justify;
+}
+
+.date {
+    font-weight: bold;
+}
+
+blockquote {
+    font-style: italic;
+    text-align: justify;
+}
+
+#reference {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}
