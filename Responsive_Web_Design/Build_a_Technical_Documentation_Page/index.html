@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dart Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>
+            <h1>Dart documentation</h1>
+        </header>
+        <ul>
+            <li><a href="#introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#installing_dart" class="nav-link">Installing Dart</a></li>
+            <li><a href="#basic_syntax" class="nav-link">Basic Syntax</a></li>
+            <li> <a href="#comments" class="nav-link">Comments</a></li>
+            <li><a href="#variables_and_data_types" class="nav-link">Variables and Data Types</a></li>
+            <li><a href="#control_flow_statements" class="nav-link">Control Flow Statements</a></li>
+            <li><a href="#functions" class="nav-link">Functions</a></li>
+            <li><a href="#classes" class="nav-link">Classes</a></li>
+            <li><a href="#async" class="nav-link">Async</a></li>
+            <li><a href="#reference" class="nav-link">Reference</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>
+                <h2>Introduction</h2>
+            </header>
+            <article>
+                <p>Dart is a client-optimized programming language developed by Google for building fast apps on any
+                    platform.
+                    Dart is an object-oriented language with C-style syntax and supports strong typing, interfaces,
+                    mixins,
+                    abstract classes, and more. Dart also includes features like async/await, futures, and isolates for
+                    writing
+                    concurrent and asynchronous code. Dart can be compiled to native code or JavaScript, making it a
+                    versatile
+                    language for building a wide range of applications.</p>
+                <p>Some key features of Dart include:</p>
+                <ul>
+                    <li>Strong typing and null safety</li>
+                    <li>Rich core libraries</li>
+                    <li>Support for asynchronous programming</li>
+                    <li>Native performance on multiple platforms</li>
+                    <li>Easy integration with JavaScript</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="installing_dart">
+            <header>
+                <h2>Installing Dart</h2>
+            </header>
+            <article>
+                <p>To install Dart, follow the instructions provided on the Dart website: <a
+                        href="https://dart.dev/get-dart">https://dart.dev/get-dart</a>.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="basic_syntax">
+            <header>
+                <h2>Basic Syntax</h2>
+            </header>
+            <article>
+                <p>A simple Dart program starts with the main function:</p>
+                <pre><code>
+void main() {
+  print('Hello, World!');
+}
+    </code></pre>
+                <p>Comments in Dart can be single-line or multi-line:</p>
+                <pre><code>
+// This is a single-line comment
+
+/*
+This is a
+multi-line comment
+*/
+    </code></pre>
+            </article>
+        </section>
+
+        <section class="main-section" id="comments">
+            <header>
+                <h2>Comments</h2>
+            </header>
+            <article>
+                <p>Comments in Dart are used to explain the code and make it more readable. A comment in Dart starts
+                    with // for a single-line comment or /* */ for a multi-line comment. Here is an example:</p>
+                <pre><code>
+// This is a single-line comment in 
+/*
+  This is a multi-line comment in Dart
+  It can span multiple lines
+*/
+
+void myFunction() {
+  // This is a comment inside a function
+  print('Hello, world!'); // This is also a comment
+}                    
+                </code></pre>
+            </article>
+        </section>
+
+        <section class="main-section" id="variables_and_data_types">
+            <header>
+                <h2>Variables and Data Types</h2>
+            </header>
+            <article>
+                <p>Dart has built-in support for the following data types:</p>
+                <ul>
+                    <li>Numbers (int and double)</li>
+                    <li>Strings</li>
+                    <li>Booleans</li>
+                    <li>Lists</li>
+                    <li>Maps</li>
+                </ul>
+                <p>Here's an example of declaring variables in Dart:</p>
+                <pre><code>
+int age = 30;
+double height = 5.9;
+String name = 'John Doe';
+bool isStudent = false;
+List&lt;int&gt; numbers = [1, 2, 3, 4, 5];
+Map&lt;String, String&gt; userInfo = {'name': 'John', 'email': 'john@example.com'};
+    </code></pre>
+            </article>
+        </section>
+
+        <section class="main-section" id="control_flow_statements">
+            <header>
+                <h2>Control Flow Statements</h2>
+            </header>
+            <article>
+                <p>Dart supports common control flow statements like if-else, for loop, and while loop:</p>
+                <pre><code>
+// If-else statement
+if (age > 18) {
+  print('You are an adult');
+} else {
+  print('You are not an adult');
+}
+
+// For loop
+for (int i = 0; i &lt; 5; i++) {
+  print(i);
+}
+
+// While loop
+int count = 0;
+while (count &lt; 5) {
+  print(count);
+  count++;
+}
+    </code></pre>
+            </article>
+        </section>
+
+        <section class="main-section" id="functions">
+            <header>
+                <h2>Functions</h2>
+            </header>
+            <article>
+                <p>Functions in Dart can be defined with the `void` keyword or with a return type:</p>
+                <pre><code>
+void greet() {
+  print('Hello, World!');
+}
+
+int add(int a, int b) {
+  return a + b;
+}
+
+void main() {
+  greet();
+  int sum = add(5, 3);
+  print('Sum: $sum');
+}
+    </code></pre>
+            </article>
+        </section>
+
+        <section class="main-section" id="classes">
+            <header>
+                <h2>Classes</h2>
+            </header>
+            <article>
+                <p>In Dart, a class is a blueprint for creating objects, which are instances of that class. A class
+                    defines
+                    the attributes and methods that an object can have, as well as its behavior and functionality.</p>
+                <p>To define a class in Dart, use the <code class="inline">class</code> keyword followed by the class
+                    name,
+                    and then the class body enclosed in curly braces:</p>
+
+                <pre><code>
+/// The `Person` class represents a person with a name and age.
+class Person {
+  /// The name of the person.
+  String name;
+
+  /// The age of the person.
+  int age;
+
+  /// Creates a new `Person` instance with the given `name` and `age`.
+  Person(this.name, this.age);
+
+  /// Prints a greeting message to the console.
+  void sayHello() {
+    print('Hello, my name is $name and I am $age years old.');
+  }
+}
+
+void main() {
+  final person = Person('John', 25);
+  person.sayHello();
+}
+    </code></pre>
+            </article>
+        </section>
+
+        <section class="main-section" id="async">
+            <header>
+                <h2>Async</h2>
+            </header>
+            <article>
+                <p>Dart's async programming model allows for non-blocking operations, making it easy to write
+                    asynchronous code that runs efficiently. One code example of using async in Dart is the following:
+                </p>
+                <pre><code>
+Future&lt;void&gt; fetchData() async {
+    final response = await http.get(Uri.parse('https://example.com/data'));
+    final data = json.decode(response.body);
+    // do something with the fetched data
+  }                      
+                </code></pre>
+            </article>
+        </section>
+
+        <section class="main-section" id="reference">
+            <header>
+                <h2>Reference</h2>
+            </header>
+            <article>
+                <p>All the documentation in this page is taken from <a href="https://dart.dev/language">dart.dev</a>.
+                </p>
+            </article>
+        </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
